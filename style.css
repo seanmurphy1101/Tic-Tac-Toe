@@ -1,0 +1,43 @@
+:root{
+    --grid-size: 100px;
+}
+body{
+    background-color: #DADFF7;
+    font-family: 'Odibee Sans', cursive;
+}
+.container{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.board{
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size) var(--grid-size);
+}
+.grid-item{
+    display: block;
+    border: 2px solid black;
+    height: var(--grid-size);
+    width: var(--grid-size);
+    background-color: #1F2232;
+    color: #DADFF7;
+    font-family: 'Odibee Sans', cursive;;
+    font-size: 30px; 
+}
+button:hover{
+    background-color: gray;
+}
+#results{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
